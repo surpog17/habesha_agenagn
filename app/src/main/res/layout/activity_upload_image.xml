@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".UploadImage">
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:hint="Name For Image"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonUpload"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Upload" />-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="141dp" />
+
+    <EditText
+        android:id="@+id/firstnamediver"
+        android:layout_width="328dp"
+        android:layout_height="38dp"
+        android:background="@drawable/username1"
+        android:padding="10dp"
+        android:hint="@string/enter_your_firstname"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/lastnamedirver"
+        android:layout_width="328dp"
+        android:layout_height="38dp"
+        android:background="@drawable/username1"
+        android:padding="10dp"
+        android:freezesText="true"
+        android:hint="@string/enter_your_lastname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/experiencedirver"
+        android:layout_width="328dp"
+        android:layout_height="38dp"
+        android:background="@drawable/username1"
+        android:padding="10dp"
+        android:freezesText="true"
+        android:hint="@string/enter_your_experience_year"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/emaildirver"
+        android:layout_width="326dp"
+        android:layout_height="38dp"
+        android:background="@drawable/username1"
+        android:padding="10dp"
+        android:freezesText="true"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/phonedirver"
+        android:layout_width="328dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/username1"
+        android:padding="10dp"
+        android:freezesText="true"
+        android:hint="@string/enter_your_phone_number"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/dwork"
+        android:layout_width="201dp"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_work"
+        android:background="#fff"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="73dp"
+        android:layout_height="75dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="306dp" />
+    <EditText
+        android:id="@+id/descriptiondirver"
+        android:layout_width="337dp"
+        android:layout_height="133dp"
+        android:background="@drawable/username1"
+        android:padding="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/enter_your_description"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-500dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/button"
+        android:text="@string/register"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

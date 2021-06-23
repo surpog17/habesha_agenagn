@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ServiceSignup">
+
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/habeshalogo1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="119dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="200dp"
+            android:text="@string/signup"
+            android:textSize="35dp"
+            android:textColor="#F6B22A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.277" />
+        />
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/name"
+            android:ems="10"
+            android:hint="@string/enter_your_name_here"
+            android:inputType="textPersonName"
+            android:paddingLeft="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.37"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/email"
+            android:ems="10"
+            android:hint="@string/enter_email_here"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.487" />
+
+        <EditText
+            android:id="@+id/edituser"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+
+            android:background="@drawable/username"
+            android:ems="10"
+            android:hint="@string/enter_username_here"
+            android:inputType="textPersonName"
+            android:paddingLeft="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.596"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editpass"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/password"
+            android:ems="10"
+            android:hint="@string/enter_password_here"
+            android:inputType="textPassword"
+            android:paddingLeft="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.711"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:textColor="#F6B22A"
+            android:text="@string/signup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.782"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/back"
+            android:background="@drawable/buttonyellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.681"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.782"
+            tools:ignore="MissingConstraints" />
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radiobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/customradio"
+                android:onClick="Radiobutton"
+                android:text="@string/signup_us_user"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="600dp" />
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

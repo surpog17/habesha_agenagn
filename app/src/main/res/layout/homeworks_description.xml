@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lll_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:layout_marginTop="20dp"
+    android:background="#e6f2ff"
+    android:orientation="vertical"
+    tools:context=".Homeworks_Description">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#1a75ff">
+        <ImageView
+            android:id="@+id/homeimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/home"/>
+        <TextView
+            android:id="@+id/service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="0dp"
+            android:text="TextView"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/company" />
+
+        <TextView
+            android:id="@+id/companyname"
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_location_on"/>
+
+        <TextView
+            android:id="@+id/place_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="9dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/home_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="0dp" />
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="9dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/callone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/phones"/>
+
+        <TextView
+            android:id="@+id/phone_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="9dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/calltwo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/phones"/>
+
+        <TextView
+            android:id="@+id/add_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="9dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/emails"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/homeemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/description"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-215dp"
+            android:layout_marginTop="30dp"
+            android:text="n/a"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="433dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phonecall"
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/currentlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/locationcurrent"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/emailsend"
+            android:layout_width="88dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/emails"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

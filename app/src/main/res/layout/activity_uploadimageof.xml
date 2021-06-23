@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".Uploadimageof">
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:hint="Name For Image"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/buttonUpload"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Upload" />-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="141dp" />
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <EditText
+        android:id="@+id/emaildirver"
+        android:layout_width="326dp"
+        android:layout_height="38dp"
+        android:background="@drawable/username1"
+        android:padding="10dp"
+        android:freezesText="true"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="263dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/button"
+        android:text="@string/register"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

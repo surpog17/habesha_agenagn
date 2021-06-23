@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/catagory"
+            android:icon="@drawable/plus"
+            android:title="Catagory"/>
+        <item android:id="@+id/current"
+            android:icon="@drawable/ic_location_on"
+            android:title="location"/>
+        <item android:id="@+id/nearby"
+            android:icon="@drawable/ic_near_me"
+            android:title="nearby location"/>
+        <item android:id="@+id/rate"
+            android:icon="@drawable/ic_rate_review"
+            android:title="Rate"/>
+    </group>
+    <item android:title="Communication">
+        <menu>
+            <item android:id="@+id/complain"
+                android:icon="@drawable/plus"
+                android:title="complain"/>
+            <item android:id="@+id/share"
+                android:icon="@drawable/service"
+                android:title="share"/>
+        </menu>
+    </item>
+</menu>

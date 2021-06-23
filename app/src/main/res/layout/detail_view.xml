@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Detail_View">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="597dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="83dp"
+        android:background="#000"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/person" />
+
+
+        <TextView
+            android:id="@+id/tv_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/exp"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="15dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_email_black_24dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="370dp"
+            android:text="@string/work"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="375dp"
+            android:text="N/A"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="374dp"
+            android:layout_height="199dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="150dp"
+            android:text="N/A"
+            android:textColor="#000" />
+
+
+        <ImageView
+            android:id="@+id/delete_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="360dp"
+            android:src="@drawable/delete" />
+
+        <ImageView
+            android:id="@+id/update_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="360dp"
+            android:src="@drawable/update" />
+
+        <TextView
+            android:layout_width="203dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="450dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="214dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="450dp"
+            android:background="#F6B22A"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+            </RelativeLayout>

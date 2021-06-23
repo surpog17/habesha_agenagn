@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/location_search"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="enter Any place name...." />
+        <ImageButton
+            android:id="@+id/search_address"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:src="@drawable/ic_search_black_24dp"/>
+
+    </RelativeLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        tools:context=".GoogleMapsActivity" />
+    <RelativeLayout
+        android:id="@+id/second_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/hospital_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="353dp"
+            android:layout_marginBottom="26dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_local_hospital" />
+
+        <ImageButton
+            android:id="@+id/school_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/hospital_nearby"
+            android:layout_toRightOf="@+id/hospital_nearby"
+            android:src="@drawable/ic_school"/>
+        <ImageButton
+            android:id="@+id/restaurants_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/school_nearby"
+            android:layout_toRightOf="@+id/school_nearby"
+            android:src="@drawable/ic_restaurant"/>
+        <ImageButton
+            android:id="@+id/atm_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/restaurants_nearby"
+            android:layout_toRightOf="@+id/restaurants_nearby"
+            android:src="@drawable/atm"/>
+        <ImageButton
+            android:id="@+id/bank_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/atm_nearby"
+            android:layout_toRightOf="@+id/atm_nearby"
+            android:src="@drawable/ic_local_atm_black_24dp"/>
+        <ImageButton
+            android:id="@+id/supermarket_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/bank_nearby"
+            android:layout_toRightOf="@+id/bank_nearby"
+            android:src="@drawable/supermarket"/>
+    </RelativeLayout>
+</RelativeLayout>

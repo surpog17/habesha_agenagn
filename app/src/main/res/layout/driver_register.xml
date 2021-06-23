@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".Driver_Register">
+
+    <TextView
+        android:id="@+id/lati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="0dp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/longi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="0dp"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="280dp"
+        android:src="@drawable/driving"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="283dp"
+        android:layout_height="131dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/addphoto"
+
+         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/persons"
+            tools:ignore="MissingConstraints" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:id="@+id/firstnamediver"
+            app:errorEnabled="true"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+
+                android:layout_width="295dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-40dp"
+                android:hint="@string/enter_your_firstname"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:textColor="#000"
+                tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/lastnamedirver"
+            android:layout_marginTop="-7dp"
+            app:errorEnabled="true"
+            >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="295dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:freezesText="true"
+            android:hint="@string/enter_your_lastname"
+            android:inputType="textPersonName"
+            android:paddingTop="13sp"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="@string/choose_your_work"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486"
+        tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/dwork"
+            android:layout_width="199dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/emails"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/emaildirver"
+            android:layout_marginTop="-40dp"
+            app:errorEnabled="true"
+            >
+    <androidx.appcompat.widget.AppCompatEditText
+
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:freezesText="true"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="-40dp"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/border"
+        tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/phones"
+        tools:ignore="MissingConstraints" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/phonedirver"
+            android:layout_marginTop="-40dp"
+            app:errorEnabled="true">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:freezesText="true"
+        android:hint="@string/enter_your_phone_number"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/border"
+        tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/addphonedirver"
+            android:layout_marginTop="-7dp"
+            app:errorEnabled="true">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:freezesText="true"
+        android:hint="Additional phone number(Optional)"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/locations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762"
+        tools:ignore="MissingConstraints" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/text_location"
+            android:layout_marginTop="-40dp"
+            app:errorEnabled="true">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:freezesText="true"
+        android:hint="Enter your place there"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/border"
+        tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/descriptions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846"
+        tools:ignore="MissingConstraints" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/descriptiondirver"
+            android:layout_marginTop="-40dp"
+            app:errorEnabled="true">
+    <androidx.appcompat.widget.AppCompatEditText
+
+        android:layout_width="295dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-40dp"
+        android:ems="10"
+        android:layout_marginLeft="30dp"
+        android:gravity="start|top"
+        android:hint="@string/enter_your_description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/register"
+        android:textColor="#fff"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
+</ScrollView>
